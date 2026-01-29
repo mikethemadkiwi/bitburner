@@ -6,6 +6,7 @@ not ALL scripts can see what the other is doing so some priority enabling will s
 - BasicHack.js - standard viral payload. hacks, grows and weakens.  
 - hacknet_monitor.js - Monitors and autobuys hacknet upgrades. RUN THIS FIRST on each run!! $$$$ maker  
 - server_hack_monitor - Monitors the autohacking and penetration of servers in the seen list.  
+( cannot currently autobuy/learn programs. manual attaintment still at this stage. )  
 - server_upgrade_monitor - Upgrades and monitors purchased attack servers, buying them for each hacked server to target them with the prefix "mk_"  
   
 Suggestions:  
