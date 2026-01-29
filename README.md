@@ -1,7 +1,8 @@
-# bitburner
-a collection of my bitburner scripts  
-not super tidy, not super efficient.  
-runs well.. SOME minor human interaction required as the mood adjusts.  
+# BitBurner Scripts For Old Bald Nerds.
+a collection of my bitburner scripts.  
+
+ok, i get it... not super tidy, not super efficient.  
+It runs. it doesnt crash for no reason. BUT... Some minor human interaction required as the mood adjusts.  
 not ALL scripts can see what the other is doing so some priority enabling will still be manually required at THIS stage.  
 - BasicHack.js - standard viral payload. hacks, grows and weakens.  
 - hacknet_monitor.js - Monitors and autobuys hacknet upgrades. RUN THIS FIRST on each run!! $$$$ maker  
