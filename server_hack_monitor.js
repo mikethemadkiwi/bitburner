@@ -53,7 +53,6 @@ export async function main(ns) {
   //
   function isInBlacklist(tarHost){
     var donthack = serverDontHackList.filter(function (node){ return (node == tarHost) })
-    // filter the 'mk_*' servers??
     if (donthack == tarHost){return true}else{return false}
   }
   
@@ -175,23 +174,16 @@ export async function main(ns) {
         }
       }
     }
-    var hServ = ns.getServer('home')
-    var hPlayer = ns.getPlayer()
-    var hasTor = ns.hasTorRouter()
     ns.clearLog()     
     ns.print(`======== ${Date.now()} =========`)
     for (var textBlob of serverTickText){
       ns.print(textBlob)
     }
-    ns.print(`======== Home: =========`)
-    ns.print(`Ram: ${ns.getServerMaxRam("home")}, Cores: ${hServ.cpuCores} `)
-    ns.print(`Running with ${Math.floor(threadscanfit)} Threads/Server`)
-    ns.print(`Karma: ${hPlayer.karma} HackLvl: ${ns.getHackingLevel()} Money: ${ns.nFormat(hPlayer.money, "$0.000a")}`)
     ns.print(`======== Next Hack: =========`)
     var diff = (lowest-ns.getHackingLevel())
     ns.print(`${lowestname} [${lowest}] ${diff} Remaining.`)
-    ns.print(`======== Programs: =========`)
-    ns.print(`Tor: ${hasTor}`);
+    ns.print(`==== Attacks on Hacked Servers: ====`)
+    ns.print(`Threads/target: ${Math.floor(threadscanfit)} on {Home}`)
     await ns.sleep(sleepTime);
   }
 }
